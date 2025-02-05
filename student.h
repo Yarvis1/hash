@@ -5,12 +5,15 @@ class student{
 
 public:
   student(int i, float gp, const char* n);
-  int getId();
-  void setNext();
+  int getId(); 
+  double getGpa();
+  char* getName();
   student* getNext();
- private:
-  int id;
-  const char* name[20];
-  float gpa;
+  void setNext(student* s);
   student* next;
+ 
+  int id;
+  char name[40];
+  float gpa;
+  
 };
