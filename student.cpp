@@ -5,6 +5,7 @@ student::student(int i, float gp,const char* n){
   id=i;
   gpa=gp;
   strncpy(name,n,40);
+  next=NULL;
 }
 int student::getId(){
   return id;
@@ -13,7 +14,7 @@ char*  student::getName(){
   return name;
 }
 double student::getGpa(){
-  return id;
+  return gpa;
 }
 student* student::getNext(){
   return next;
